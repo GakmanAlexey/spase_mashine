@@ -127,10 +127,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CFG.cpp" />
+    <ClCompile Include="custom_event.cpp" />
+    <ClCompile Include="event.cpp" />
+    <ClCompile Include="F.cpp" />
+    <ClCompile Include="L.cpp" />
+    <ClCompile Include="Load.cpp" />
+    <ClCompile Include="scene.cpp" />
     <ClCompile Include="spase_mashine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CFG.h" />
+    <ClInclude Include="custom_event.h" />
+    <ClInclude Include="event.h" />
+    <ClInclude Include="F.h" />
+    <ClInclude Include="L.h" />
+    <ClInclude Include="Load.h" />
+    <ClInclude Include="scene.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
