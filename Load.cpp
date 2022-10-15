@@ -14,6 +14,7 @@ void Load::img() {
 	Img_fonG.loadFromFile(cfg.direct_root + cfg.direct_img + "fon_game.png");
 	Img_fon_select_game.loadFromFile(cfg.direct_root + cfg.direct_img + "fon_select_liner.png");
 	Img_bottom_select_game.loadFromFile(cfg.direct_root + cfg.direct_img + "botom_select_liner.png");
+	Img_airLiners.loadFromFile(cfg.direct_root + cfg.direct_img + "liner.png");
 
 
 };
@@ -23,5 +24,6 @@ void Load::texturs() {
 	Texturs_fonG.loadFromImage(Img_fonG);
 	Texturs_fon_select_game.loadFromImage(Img_fon_select_game);
 	Texturs_bottom_select_game.loadFromImage(Img_bottom_select_game);
+	Texturs_airLiners.loadFromImage(Img_airLiners);
 };
 

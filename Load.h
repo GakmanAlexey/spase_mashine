@@ -24,6 +24,8 @@ public:
 	Texture Texturs_fon_select_game;
 	Image Img_bottom_select_game;
 	Texture Texturs_bottom_select_game;
+	Image Img_airLiners;
+	Texture Texturs_airLiners;
 
 
 	void font();
