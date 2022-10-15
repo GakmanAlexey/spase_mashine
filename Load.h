@@ -22,6 +22,8 @@ public:
 
 	Image Img_fon_select_game;
 	Texture Texturs_fon_select_game;
+	Image Img_bottom_select_game;
+	Texture Texturs_bottom_select_game;
 
 
 	void font();

@@ -75,6 +75,7 @@ int L::button(int s_x, int s_y, int width, int height, sf::String text, int styl
 	ev.botton_n.push_back(name);
 	return 0;
 };
+
 int L::clice_zone(int s_x, int s_y, int width, int height, std::string name, event& ev) {
 
 	ev.zone_x.push_back(s_x);

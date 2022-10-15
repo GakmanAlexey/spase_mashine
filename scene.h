@@ -35,6 +35,18 @@ public:
 	sf::Text pl10;
 	sf::String pl10_text = L"10";
 
+
+	sf::String b1_text = L"Играть";
+	sf::String b2_text = L"Создать";
+	sf::String b3_text = L"Создать";
+	sf::String b4_text = L"Создать";
+	sf::String b5_text = L"Создать";
+	sf::String b6_text = L"Создать";
+	sf::String b7_text = L"Создать";
+	sf::String b8_text = L"Создать";
+	sf::String b9_text = L"Создать";
+	sf::String b10_text = L"Создать";
+
 	bool scena3_start = false;
 	void main(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window);
 	void scena1(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window);
