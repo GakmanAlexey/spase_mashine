@@ -20,6 +20,9 @@ public:
 	Texture Texturs_fonG;
 
 
+	Image Img_fon_select_game;
+	Texture Texturs_fon_select_game;
+
 
 	void font();
 	void img();

@@ -12,12 +12,14 @@ void Load::img() {
 	Img_fonL.loadFromFile(cfg.direct_root + cfg.direct_img + "fon1.png");
 	Img_fonB.loadFromFile(cfg.direct_root + cfg.direct_img + "fon_botton1.png");
 	Img_fonG.loadFromFile(cfg.direct_root + cfg.direct_img + "fon_game.png");
+	Img_fon_select_game.loadFromFile(cfg.direct_root + cfg.direct_img + "fon_select_liner.png");
+
 
 };
 void Load::texturs() {
 	Texturs_fonL.loadFromImage(Img_fonL);
 	Texturs_fonB.loadFromImage(Img_fonB);
 	Texturs_fonG.loadFromImage(Img_fonG);
+	Texturs_fon_select_game.loadFromImage(Img_fon_select_game);
 };
-
 

@@ -23,15 +23,7 @@ void custom_event::eve(event& ev) {
 	}
 	if (ev.focus_botton == "boot7") {
 		focus_windows = 6;
-		intelect_pc = 1;
-	}
-	if (ev.focus_botton == "boot8") {
-		focus_windows = 6;
-		intelect_pc = 2;
-	}
-	if (ev.focus_botton == "boot9") {
-		focus_windows = 6;
-		intelect_pc = 3;
+		
 	}
 
 	if (ev.focus_zone != "") {
