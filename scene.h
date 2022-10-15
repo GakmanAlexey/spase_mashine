@@ -35,6 +35,27 @@ public:
 	sf::Text pl10;
 	sf::String pl10_text = L"10";
 
+	sf::Text lvl_p1;
+	sf::String lvl_p1_text = L"Уровень: 1";
+	sf::Text lvl_p2;
+	sf::String lvl_p2_text = L"Уровень: 1";
+	sf::Text lvl_p3;
+	sf::String lvl_p3_text = L"Уровень: 1";
+	sf::Text lvl_p4;
+	sf::String lvl_p4_text = L"Уровень: 1";
+	sf::Text lvl_p5;
+	sf::String lvl_p5_text = L"Уровень: 1";
+	sf::Text lvl_p6;
+	sf::String lvl_p6_text = L"Уровень: 1";
+	sf::Text lvl_p7;
+	sf::String lvl_p7_text = L"Уровень: 1";
+	sf::Text lvl_p8;
+	sf::String lvl_p8_text = L"Уровень: 1";
+	sf::Text lvl_p9;
+	sf::String lvl_p9_text = L"Уровень: 1";
+	sf::Text lvl_p10;
+	sf::String lvl_p10_text = L"Уровень: 1";
+
 
 	sf::String b1_text = L"Играть";
 	sf::String b2_text = L"Создать";

@@ -135,6 +135,7 @@
     <ClCompile Include="Load.cpp" />
     <ClCompile Include="scene.cpp" />
     <ClCompile Include="spase_mashine.cpp" />
+    <ClCompile Include="psfile.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -147,6 +148,7 @@
     <ClInclude Include="L.h" />
     <ClInclude Include="Load.h" />
     <ClInclude Include="scene.h" />
+    <ClInclude Include="psfile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
