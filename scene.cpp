@@ -1,9 +1,10 @@
 #include "scene.h"
 #include "custom_event.h"
 #include <chrono>
+#include "brain.h"
 
 using namespace std::chrono;
-void scene::main(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window) {
+void scene::main(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain &b) {
     
     if (c_e.focus_windows == 1) {
         scena1(cfg, ev, lo, l, f, c_e, window);

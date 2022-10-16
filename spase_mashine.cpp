@@ -9,15 +9,17 @@
 #include "custom_event.h"
 #include "scene.h"
 #include "psfile.h"
+#include "brain.h"
 
 int main()
 {
-    psfile ps("save1");
+    
     CFG cfg;
     event ev;
     Load lo;
     L l;
     F f;
+    brain b;
     custom_event c_e;
     sf::RenderWindow window(sf::VideoMode(cfg.windows_width, cfg.windows_height), L"Крестики нолики by RedLava");
     
@@ -29,7 +31,7 @@ int main()
     scene sc;
     while (ev.windows_job)
     {
-        sc.main(cfg, ev, lo, l, f, c_e, window);
+        sc.main(cfg, ev, lo, l, f, c_e, window,b);
     }
     return 0;
 }
