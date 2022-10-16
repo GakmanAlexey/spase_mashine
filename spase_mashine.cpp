@@ -8,9 +8,11 @@
 #include "F.h"
 #include "custom_event.h"
 #include "scene.h"
+#include "psfile.h"
 
 int main()
 {
+    psfile ps("save1");
     CFG cfg;
     event ev;
     Load lo;
@@ -18,7 +20,8 @@ int main()
     F f;
     custom_event c_e;
     sf::RenderWindow window(sf::VideoMode(cfg.windows_width, cfg.windows_height), L"Крестики нолики by RedLava");
-
+    
+    
     lo.font();
     lo.img();
     lo.texturs();
@@ -28,6 +31,5 @@ int main()
     {
         sc.main(cfg, ev, lo, l, f, c_e, window);
     }
-
     return 0;
 }

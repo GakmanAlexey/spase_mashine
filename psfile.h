@@ -2,13 +2,15 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "F.h"
 class psfile
 {
 public:
 	psfile(std::string url);
+	F f;
 
-	vector <std::string> name;
-	vector <std::string> param;
+	std::vector <std::string> name;
+	std::vector <std::string> param;
 
 	bool status = false;
 	std::string result = "";
