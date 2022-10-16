@@ -28,6 +28,10 @@ public:
 	Texture Texturs_airLiners;
 
 
+	Image Img_avalist;
+	Texture Texturs_avalist;
+
+
 	void font();
 	void img();
 	void texturs();
