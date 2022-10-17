@@ -4,22 +4,22 @@
 #include "brain.h"
 
 using namespace std::chrono;
-void scene::main(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain &b) {
+void scene::main(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain &b, Inventory& inv, date_base& db, date_base_img& dbi) {
     b.cheack_save();
     b.load_save();
 
     if (c_e.focus_windows == 1) {
-        scena1(cfg, ev, lo, l, f, c_e, window,  b);
+        scena1(cfg, ev, lo, l, f, c_e, window,  b, inv, db, dbi);
     }
     else if (c_e.focus_windows == 2) {
-        scena2(cfg, ev, lo, l, f, c_e, window,  b);
+        scena2(cfg, ev, lo, l, f, c_e, window,  b, inv, db, dbi);
     }
     else if (c_e.focus_windows == 10) {
-        scena3(cfg, ev, lo, l, f, c_e, window, b);
+        scena3(cfg, ev, lo, l, f, c_e, window, b, inv, db, dbi);
     }
 };
 
-void scene::scena1(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b) {
+void scene::scena1(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi) {
     sf::Sprite sprite1;
     sf::Event evsf;
     ev.sf_ev(evsf, window);
@@ -38,8 +38,8 @@ void scene::scena1(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
     c_e.eve(ev);
 };
 
-void scene::scena2(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b) {
-    scena2_preload(cfg, ev, lo, l, f, c_e, window, b);
+void scene::scena2(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi) {
+    scena2_preload(cfg, ev, lo, l, f, c_e, window, b, inv, db, dbi);
     
  
     sf::Sprite sprite1;
@@ -118,7 +118,7 @@ void scene::scena2(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
     window.display();
     c_e.eve(ev);
 };
-void scene::scena2_preload(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b) {
+void scene::scena2_preload(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi) {
     if (scena2_preload_flag) {
         return;
     }
@@ -189,7 +189,7 @@ void scene::scena2_preload(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_eve
     lvl_p10_text = L"Уровень: " + b.lvl_user[9];
 };
 
-void scene::scena3(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b) {
+void scene::scena3(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi) {
 
 
     sf::Sprite sprite1;

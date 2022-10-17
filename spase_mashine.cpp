@@ -42,7 +42,7 @@ int main()
     scene sc;
     while (ev.windows_job)
     {
-        sc.main(cfg, ev, lo, l, f, c_e, window,b);
+        sc.main(cfg, ev, lo, l, f, c_e, window,b, inv, db, dbi);
     }
     return 0;
 }
