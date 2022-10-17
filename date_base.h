@@ -51,7 +51,6 @@ public:
 	std::vector <std::string> name;
 
 	void load_corps();
-
 	void load_corp1();
 	void load_corp2();
 	void load_corp3();
@@ -63,5 +62,72 @@ public:
 	void load_corp9();
 	void load_corp10();
 
+
+	void load_weapon();
+	void load_weapon_laser();
+	void load_weapon_raket();
+	void load_weapon_snariad();
+	void load_weapon_plasma();
+	void load_weapon_electro();
+
+
+	void load_weapon_laser1();
+	void load_weapon_laser2();
+	void load_weapon_laser3();
+	void load_weapon_laser4();
+	void load_weapon_laser5();
+	void load_weapon_laser6();
+	void load_weapon_laser7();
+	void load_weapon_laser8();
+	void load_weapon_laser9();
+	void load_weapon_laser10();
+
+
+	void load_weapon_raket1();
+	void load_weapon_raket2();
+	void load_weapon_raket3();
+	void load_weapon_raket4();
+	void load_weapon_raket5();
+	void load_weapon_raket6();
+	void load_weapon_raket7();
+	void load_weapon_raket8();
+	void load_weapon_raket9();
+	void load_weapon_raket10();
+
+
+	void load_weapon_snariad1();
+	void load_weapon_snariad2();
+	void load_weapon_snariad3();
+	void load_weapon_snariad4();
+	void load_weapon_snariad5();
+	void load_weapon_snariad6();
+	void load_weapon_snariad7();
+	void load_weapon_snariad8();
+	void load_weapon_snariad9();
+	void load_weapon_snariad10();
+
+
+	void load_weapon_plasma1();
+	void load_weapon_plasma2();
+	void load_weapon_plasma3();
+	void load_weapon_plasma4();
+	void load_weapon_plasma5();
+	void load_weapon_plasma6();
+	void load_weapon_plasma7();
+	void load_weapon_plasma8();
+	void load_weapon_plasma9();
+	void load_weapon_plasma10();
+
+
+	void load_weapon_electro1();
+	void load_weapon_electro2();
+	void load_weapon_electro3();
+	void load_weapon_electro4();
+	void load_weapon_electro5();
+	void load_weapon_electro6();
+	void load_weapon_electro7();
+	void load_weapon_electro8();
+	void load_weapon_electro9();
+	void load_weapon_electro10();
 };
 
