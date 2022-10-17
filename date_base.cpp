@@ -950,16 +950,436 @@ void date_base::load_weapon_laser10() {
 };
 
 
-void date_base::load_weapon_raket1() {};
-void date_base::load_weapon_raket2() {};
-void date_base::load_weapon_raket3() {};
-void date_base::load_weapon_raket4() {};
-void date_base::load_weapon_raket5() {};
-void date_base::load_weapon_raket6() {};
-void date_base::load_weapon_raket7() {};
-void date_base::load_weapon_raket8() {};
-void date_base::load_weapon_raket9() {};
-void date_base::load_weapon_raket10() {};
+void date_base::load_weapon_raket1() {
+	id_des.push_back(21);
+	name.push_back("Proto_raket_11");
+	id_type.push_back(3);
+	position.push_back(0);
+	lvl.push_back(1);
+
+	damage_laser.push_back(0);
+	damage_raket.push_back(0);
+	damage_snariad.push_back(0);
+	damage_plasma.push_back(0);
+	damage_electro.push_back(0);
+	damage_stolk.push_back(0);
+
+	defender_laser.push_back(0);
+	defender_raket.push_back(0);
+	defender_snariad.push_back(0);
+	defender_plasma.push_back(0);
+	defender_electro.push_back(0);
+	defender_stolk.push_back(0);
+
+	stats_hp.push_back(0);
+	stats_energi.push_back(0);
+	stats_mass.push_back(0);
+
+	kf_damage_laser.push_back(0);
+	kf_damage_raket.push_back(0);
+	kf_damage_snariad.push_back(0);
+	kf_damage_plasma.push_back(0);
+	kf_damage_electro.push_back(0);
+	kf_damage_stolk.push_back(0);
+
+	kf_defender_laser.push_back(0);
+	kf_defender_raket.push_back(0);
+	kf_defender_snariad.push_back(0);
+	kf_defender_plasma.push_back(0);
+	kf_defender_electro.push_back(0);
+	kf_defender_stolk.push_back(0);
+
+	kf_stats_hp.push_back(0);
+	kf_stats_energi.push_back(0);
+	kf_stats_mass.push_back(0);
+};
+void date_base::load_weapon_raket2() {
+	id_des.push_back(22);
+	name.push_back("Proto_raket_2");
+	id_type.push_back(3);
+	position.push_back(0);
+	lvl.push_back(2);
+
+	damage_laser.push_back(0);
+	damage_raket.push_back(0);
+	damage_snariad.push_back(0);
+	damage_plasma.push_back(0);
+	damage_electro.push_back(0);
+	damage_stolk.push_back(0);
+
+	defender_laser.push_back(0);
+	defender_raket.push_back(0);
+	defender_snariad.push_back(0);
+	defender_plasma.push_back(0);
+	defender_electro.push_back(0);
+	defender_stolk.push_back(0);
+
+	stats_hp.push_back(0);
+	stats_energi.push_back(0);
+	stats_mass.push_back(0);
+
+	kf_damage_laser.push_back(0);
+	kf_damage_raket.push_back(0);
+	kf_damage_snariad.push_back(0);
+	kf_damage_plasma.push_back(0);
+	kf_damage_electro.push_back(0);
+	kf_damage_stolk.push_back(0);
+
+	kf_defender_laser.push_back(0);
+	kf_defender_raket.push_back(0);
+	kf_defender_snariad.push_back(0);
+	kf_defender_plasma.push_back(0);
+	kf_defender_electro.push_back(0);
+	kf_defender_stolk.push_back(0);
+
+	kf_stats_hp.push_back(0);
+	kf_stats_energi.push_back(0);
+	kf_stats_mass.push_back(0);
+};
+void date_base::load_weapon_raket3() {
+	id_des.push_back(23);
+	name.push_back("Proto_raket_3");
+	id_type.push_back(3);
+	position.push_back(0);
+	lvl.push_back(3);
+
+	damage_laser.push_back(0);
+	damage_raket.push_back(0);
+	damage_snariad.push_back(0);
+	damage_plasma.push_back(0);
+	damage_electro.push_back(0);
+	damage_stolk.push_back(0);
+
+	defender_laser.push_back(0);
+	defender_raket.push_back(0);
+	defender_snariad.push_back(0);
+	defender_plasma.push_back(0);
+	defender_electro.push_back(0);
+	defender_stolk.push_back(0);
+
+	stats_hp.push_back(0);
+	stats_energi.push_back(0);
+	stats_mass.push_back(0);
+
+	kf_damage_laser.push_back(0);
+	kf_damage_raket.push_back(0);
+	kf_damage_snariad.push_back(0);
+	kf_damage_plasma.push_back(0);
+	kf_damage_electro.push_back(0);
+	kf_damage_stolk.push_back(0);
+
+	kf_defender_laser.push_back(0);
+	kf_defender_raket.push_back(0);
+	kf_defender_snariad.push_back(0);
+	kf_defender_plasma.push_back(0);
+	kf_defender_electro.push_back(0);
+	kf_defender_stolk.push_back(0);
+
+	kf_stats_hp.push_back(0);
+	kf_stats_energi.push_back(0);
+	kf_stats_mass.push_back(0);
+};
+void date_base::load_weapon_raket4() {
+	id_des.push_back(24);
+	name.push_back("Proto_raket_4");
+	id_type.push_back(3);
+	position.push_back(0);
+	lvl.push_back(4);
+
+	damage_laser.push_back(0);
+	damage_raket.push_back(0);
+	damage_snariad.push_back(0);
+	damage_plasma.push_back(0);
+	damage_electro.push_back(0);
+	damage_stolk.push_back(0);
+
+	defender_laser.push_back(0);
+	defender_raket.push_back(0);
+	defender_snariad.push_back(0);
+	defender_plasma.push_back(0);
+	defender_electro.push_back(0);
+	defender_stolk.push_back(0);
+
+	stats_hp.push_back(0);
+	stats_energi.push_back(0);
+	stats_mass.push_back(0);
+
+	kf_damage_laser.push_back(0);
+	kf_damage_raket.push_back(0);
+	kf_damage_snariad.push_back(0);
+	kf_damage_plasma.push_back(0);
+	kf_damage_electro.push_back(0);
+	kf_damage_stolk.push_back(0);
+
+	kf_defender_laser.push_back(0);
+	kf_defender_raket.push_back(0);
+	kf_defender_snariad.push_back(0);
+	kf_defender_plasma.push_back(0);
+	kf_defender_electro.push_back(0);
+	kf_defender_stolk.push_back(0);
+
+	kf_stats_hp.push_back(0);
+	kf_stats_energi.push_back(0);
+	kf_stats_mass.push_back(0);
+};
+void date_base::load_weapon_raket5() {
+	id_des.push_back(25);
+	name.push_back("Proto_raket_5");
+	id_type.push_back(3);
+	position.push_back(0);
+	lvl.push_back(5);
+
+	damage_laser.push_back(0);
+	damage_raket.push_back(0);
+	damage_snariad.push_back(0);
+	damage_plasma.push_back(0);
+	damage_electro.push_back(0);
+	damage_stolk.push_back(0);
+
+	defender_laser.push_back(0);
+	defender_raket.push_back(0);
+	defender_snariad.push_back(0);
+	defender_plasma.push_back(0);
+	defender_electro.push_back(0);
+	defender_stolk.push_back(0);
+
+	stats_hp.push_back(0);
+	stats_energi.push_back(0);
+	stats_mass.push_back(0);
+
+	kf_damage_laser.push_back(0);
+	kf_damage_raket.push_back(0);
+	kf_damage_snariad.push_back(0);
+	kf_damage_plasma.push_back(0);
+	kf_damage_electro.push_back(0);
+	kf_damage_stolk.push_back(0);
+
+	kf_defender_laser.push_back(0);
+	kf_defender_raket.push_back(0);
+	kf_defender_snariad.push_back(0);
+	kf_defender_plasma.push_back(0);
+	kf_defender_electro.push_back(0);
+	kf_defender_stolk.push_back(0);
+
+	kf_stats_hp.push_back(0);
+	kf_stats_energi.push_back(0);
+	kf_stats_mass.push_back(0);
+};
+void date_base::load_weapon_raket6() {
+	id_des.push_back(26);
+	name.push_back("Proto_raket_6");
+	id_type.push_back(3);
+	position.push_back(0);
+	lvl.push_back(6);
+
+	damage_laser.push_back(0);
+	damage_raket.push_back(0);
+	damage_snariad.push_back(0);
+	damage_plasma.push_back(0);
+	damage_electro.push_back(0);
+	damage_stolk.push_back(0);
+
+	defender_laser.push_back(0);
+	defender_raket.push_back(0);
+	defender_snariad.push_back(0);
+	defender_plasma.push_back(0);
+	defender_electro.push_back(0);
+	defender_stolk.push_back(0);
+
+	stats_hp.push_back(0);
+	stats_energi.push_back(0);
+	stats_mass.push_back(0);
+
+	kf_damage_laser.push_back(0);
+	kf_damage_raket.push_back(0);
+	kf_damage_snariad.push_back(0);
+	kf_damage_plasma.push_back(0);
+	kf_damage_electro.push_back(0);
+	kf_damage_stolk.push_back(0);
+
+	kf_defender_laser.push_back(0);
+	kf_defender_raket.push_back(0);
+	kf_defender_snariad.push_back(0);
+	kf_defender_plasma.push_back(0);
+	kf_defender_electro.push_back(0);
+	kf_defender_stolk.push_back(0);
+
+	kf_stats_hp.push_back(0);
+	kf_stats_energi.push_back(0);
+	kf_stats_mass.push_back(0);
+};
+void date_base::load_weapon_raket7() {
+	id_des.push_back(27);
+	name.push_back("Proto_raket_7");
+	id_type.push_back(3);
+	position.push_back(0);
+	lvl.push_back(7);
+
+	damage_laser.push_back(0);
+	damage_raket.push_back(0);
+	damage_snariad.push_back(0);
+	damage_plasma.push_back(0);
+	damage_electro.push_back(0);
+	damage_stolk.push_back(0);
+
+	defender_laser.push_back(0);
+	defender_raket.push_back(0);
+	defender_snariad.push_back(0);
+	defender_plasma.push_back(0);
+	defender_electro.push_back(0);
+	defender_stolk.push_back(0);
+
+	stats_hp.push_back(0);
+	stats_energi.push_back(0);
+	stats_mass.push_back(0);
+
+	kf_damage_laser.push_back(0);
+	kf_damage_raket.push_back(0);
+	kf_damage_snariad.push_back(0);
+	kf_damage_plasma.push_back(0);
+	kf_damage_electro.push_back(0);
+	kf_damage_stolk.push_back(0);
+
+	kf_defender_laser.push_back(0);
+	kf_defender_raket.push_back(0);
+	kf_defender_snariad.push_back(0);
+	kf_defender_plasma.push_back(0);
+	kf_defender_electro.push_back(0);
+	kf_defender_stolk.push_back(0);
+
+	kf_stats_hp.push_back(0);
+	kf_stats_energi.push_back(0);
+	kf_stats_mass.push_back(0);
+};
+void date_base::load_weapon_raket8() {
+	id_des.push_back(28);
+	name.push_back("Proto_raket_8");
+	id_type.push_back(3);
+	position.push_back(0);
+	lvl.push_back(8);
+
+	damage_laser.push_back(0);
+	damage_raket.push_back(0);
+	damage_snariad.push_back(0);
+	damage_plasma.push_back(0);
+	damage_electro.push_back(0);
+	damage_stolk.push_back(0);
+
+	defender_laser.push_back(0);
+	defender_raket.push_back(0);
+	defender_snariad.push_back(0);
+	defender_plasma.push_back(0);
+	defender_electro.push_back(0);
+	defender_stolk.push_back(0);
+
+	stats_hp.push_back(0);
+	stats_energi.push_back(0);
+	stats_mass.push_back(0);
+
+	kf_damage_laser.push_back(0);
+	kf_damage_raket.push_back(0);
+	kf_damage_snariad.push_back(0);
+	kf_damage_plasma.push_back(0);
+	kf_damage_electro.push_back(0);
+	kf_damage_stolk.push_back(0);
+
+	kf_defender_laser.push_back(0);
+	kf_defender_raket.push_back(0);
+	kf_defender_snariad.push_back(0);
+	kf_defender_plasma.push_back(0);
+	kf_defender_electro.push_back(0);
+	kf_defender_stolk.push_back(0);
+
+	kf_stats_hp.push_back(0);
+	kf_stats_energi.push_back(0);
+	kf_stats_mass.push_back(0);
+};
+void date_base::load_weapon_raket9() {
+	id_des.push_back(29);
+	name.push_back("Proto_raket_9");
+	id_type.push_back(3);
+	position.push_back(0);
+	lvl.push_back(9);
+
+	damage_laser.push_back(0);
+	damage_raket.push_back(0);
+	damage_snariad.push_back(0);
+	damage_plasma.push_back(0);
+	damage_electro.push_back(0);
+	damage_stolk.push_back(0);
+
+	defender_laser.push_back(0);
+	defender_raket.push_back(0);
+	defender_snariad.push_back(0);
+	defender_plasma.push_back(0);
+	defender_electro.push_back(0);
+	defender_stolk.push_back(0);
+
+	stats_hp.push_back(0);
+	stats_energi.push_back(0);
+	stats_mass.push_back(0);
+
+	kf_damage_laser.push_back(0);
+	kf_damage_raket.push_back(0);
+	kf_damage_snariad.push_back(0);
+	kf_damage_plasma.push_back(0);
+	kf_damage_electro.push_back(0);
+	kf_damage_stolk.push_back(0);
+
+	kf_defender_laser.push_back(0);
+	kf_defender_raket.push_back(0);
+	kf_defender_snariad.push_back(0);
+	kf_defender_plasma.push_back(0);
+	kf_defender_electro.push_back(0);
+	kf_defender_stolk.push_back(0);
+
+	kf_stats_hp.push_back(0);
+	kf_stats_energi.push_back(0);
+	kf_stats_mass.push_back(0);
+};
+void date_base::load_weapon_raket10() {
+	id_des.push_back(30);
+	name.push_back("Proto_raket_10");
+	id_type.push_back(3);
+	position.push_back(0);
+	lvl.push_back(10);
+
+	damage_laser.push_back(0);
+	damage_raket.push_back(0);
+	damage_snariad.push_back(0);
+	damage_plasma.push_back(0);
+	damage_electro.push_back(0);
+	damage_stolk.push_back(0);
+
+	defender_laser.push_back(0);
+	defender_raket.push_back(0);
+	defender_snariad.push_back(0);
+	defender_plasma.push_back(0);
+	defender_electro.push_back(0);
+	defender_stolk.push_back(0);
+
+	stats_hp.push_back(0);
+	stats_energi.push_back(0);
+	stats_mass.push_back(0);
+
+	kf_damage_laser.push_back(0);
+	kf_damage_raket.push_back(0);
+	kf_damage_snariad.push_back(0);
+	kf_damage_plasma.push_back(0);
+	kf_damage_electro.push_back(0);
+	kf_damage_stolk.push_back(0);
+
+	kf_defender_laser.push_back(0);
+	kf_defender_raket.push_back(0);
+	kf_defender_snariad.push_back(0);
+	kf_defender_plasma.push_back(0);
+	kf_defender_electro.push_back(0);
+	kf_defender_stolk.push_back(0);
+
+	kf_stats_hp.push_back(0);
+	kf_stats_energi.push_back(0);
+	kf_stats_mass.push_back(0);
+};
 
 
 void date_base::load_weapon_snariad1() {};
