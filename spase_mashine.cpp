@@ -11,6 +11,10 @@
 #include "psfile.h"
 #include "brain.h"
 
+#include "Inventory.h"
+#include "date_base.h"
+#include "date_base_img.h"
+
 int main()
 {
     
@@ -21,6 +25,13 @@ int main()
     F f;
     brain b;
     custom_event c_e;
+
+    Inventory inv;
+    inv.load();
+    date_base db;
+    db.load();
+    date_base_img dbi;
+    dbi.load_bd();
     sf::RenderWindow window(sf::VideoMode(cfg.windows_width, cfg.windows_height), L"Крестики нолики by RedLava");
     
     

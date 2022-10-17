@@ -131,6 +131,7 @@
     <ClCompile Include="CFG.cpp" />
     <ClCompile Include="custom_event.cpp" />
     <ClCompile Include="date_base.cpp" />
+    <ClCompile Include="date_base_img.cpp" />
     <ClCompile Include="event.cpp" />
     <ClCompile Include="F.cpp" />
     <ClCompile Include="Inventory.cpp" />
@@ -148,6 +149,7 @@
     <ClInclude Include="CFG.h" />
     <ClInclude Include="custom_event.h" />
     <ClInclude Include="date_base.h" />
+    <ClInclude Include="date_base_img.h" />
     <ClInclude Include="event.h" />
     <ClInclude Include="F.h" />
     <ClInclude Include="Inventory.h" />

@@ -50,6 +50,7 @@ public:
 	std::vector <int> lvl ;
 	std::vector <std::string> name;
 
+	void load();
 	void load_corps();
 	void load_corp1();
 	void load_corp2();

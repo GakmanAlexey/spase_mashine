@@ -1,4 +1,12 @@
 #include "date_base.h"
+
+void date_base::load() {
+	load_corps();
+	load_weapon();
+	load_shield();
+	load_engin();
+};
+
 void date_base::load_corps() {
 
 	load_corp1();
