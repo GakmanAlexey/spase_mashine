@@ -14,6 +14,9 @@ void scene::main(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, s
     else if (c_e.focus_windows == 2) {
         scena2(cfg, ev, lo, l, f, c_e, window,  b);
     }
+    else if (c_e.focus_windows == 10) {
+        scena3(cfg, ev, lo, l, f, c_e, window, b);
+    }
 };
 
 void scene::scena1(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b) {
@@ -173,4 +176,46 @@ void scene::scena2_preload(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_eve
         }
         i++;
     }
+
+    lvl_p1_text = L"Уровень: " + b.lvl_user[0];
+    lvl_p2_text = L"Уровень: " + b.lvl_user[1];
+    lvl_p3_text = L"Уровень: " + b.lvl_user[2];
+    lvl_p4_text = L"Уровень: " + b.lvl_user[3];
+    lvl_p5_text = L"Уровень: " + b.lvl_user[4];
+    lvl_p6_text = L"Уровень: " + b.lvl_user[5];
+    lvl_p7_text = L"Уровень: " + b.lvl_user[6];
+    lvl_p8_text = L"Уровень: " + b.lvl_user[7];
+    lvl_p9_text = L"Уровень: " + b.lvl_user[8];
+    lvl_p10_text = L"Уровень: " + b.lvl_user[9];
+};
+
+void scene::scena3(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b) {
+
+
+    sf::Sprite sprite1;
+    sf::Sprite sprite2;
+    sf::Sprite liners;
+    sf::Event evsf;
+    ev.sf_ev(evsf, window);
+    // ----------------------------------
+    window.clear();
+    ev.boot_clear();
+    l.fon(window, lo.Texturs_fonG); 
+
+    window.draw(f.show_F(sprite2, lo.Texturs_airline_list, 60, 100));
+    window.draw(f.show_F(sprite2, lo.Texturs_airline_list, 300, 100));
+    window.draw(f.show_F(sprite2, lo.Texturs_airline_list, 540, 100));
+    window.draw(f.show_F(sprite2, lo.Texturs_airline_list, 780, 100));
+    window.draw(f.show_F(sprite2, lo.Texturs_airline_list, 1020, 100));
+    l.button(60, 650, 200, 50, L"Склад", 0, window, lo.Texturs_fonB, lo.base_font, "boot30", ev);
+    l.button(300, 650, 200, 50, L"Иследование", 0, window, lo.Texturs_fonB, lo.base_font, "boot31", ev);
+    l.button(540, 650, 200, 50, L"В бой", 0, window, lo.Texturs_fonB, lo.base_font, "boot32", ev);
+    l.button(780, 650, 200, 50, L"Смена мира", 0, window, lo.Texturs_fonB, lo.base_font, "boot33", ev);
+    l.button(1020, 650, 200, 50, L"Крафт", 0, window, lo.Texturs_fonB, lo.base_font, "boot34", ev);
+
+
+
+
+    window.display();
+    c_e.eve(ev);
 };

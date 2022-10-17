@@ -30,6 +30,8 @@ public:
 
 	Image Img_avalist;
 	Texture Texturs_avalist;
+	Image Img_airline_list;
+	Texture Texturs_airline_list;
 
 
 	void font();

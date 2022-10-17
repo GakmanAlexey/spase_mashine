@@ -16,6 +16,7 @@ void Load::img() {
 	Img_bottom_select_game.loadFromFile(cfg.direct_root + cfg.direct_img + "botom_select_liner.png");
 	Img_airLiners.loadFromFile(cfg.direct_root + cfg.direct_img + "liner.png");
 	Img_avalist.loadFromFile(cfg.direct_root + cfg.direct_img + "avatars_list.png");
+	Img_airline_list.loadFromFile(cfg.direct_root + cfg.direct_img + "fon_select_li.png");
 
 
 };
@@ -27,6 +28,7 @@ void Load::texturs() {
 	Texturs_bottom_select_game.loadFromImage(Img_bottom_select_game);
 	Texturs_airLiners.loadFromImage(Img_airLiners);
 	Texturs_avalist.loadFromImage(Img_avalist);
+	Texturs_airline_list.loadFromImage(Img_airline_list);
 };
 
 
