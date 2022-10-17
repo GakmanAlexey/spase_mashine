@@ -129,5 +129,32 @@ public:
 	void load_weapon_electro8();
 	void load_weapon_electro9();
 	void load_weapon_electro10();
+
+
+	void load_shield();
+
+	void load_shield1();
+	void load_shield2();
+	void load_shield3();
+	void load_shield4();
+	void load_shield5();
+	void load_shield6();
+	void load_shield7();
+	void load_shield8();
+	void load_shield9();
+	void load_shield10();
+
+	void load_engin();
+
+	void load_engin1();
+	void load_engin2();
+	void load_engin3();
+	void load_engin4();
+	void load_engin5();
+	void load_engin6();
+	void load_engin7();
+	void load_engin8();
+	void load_engin9();
+	void load_engin10();
 };
 
