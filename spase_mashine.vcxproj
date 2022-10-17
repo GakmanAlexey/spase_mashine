@@ -133,6 +133,7 @@
     <ClCompile Include="date_base.cpp" />
     <ClCompile Include="event.cpp" />
     <ClCompile Include="F.cpp" />
+    <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="L.cpp" />
     <ClCompile Include="Load.cpp" />
     <ClCompile Include="scene.cpp" />
@@ -149,6 +150,7 @@
     <ClInclude Include="date_base.h" />
     <ClInclude Include="event.h" />
     <ClInclude Include="F.h" />
+    <ClInclude Include="Inventory.h" />
     <ClInclude Include="L.h" />
     <ClInclude Include="Load.h" />
     <ClInclude Include="scene.h" />
