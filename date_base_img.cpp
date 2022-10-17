@@ -9,8 +9,71 @@ void date_base_img::select(int id) {
 	if (id == 1) {
 		active_x = 0;
 		active_y = 0;
-		active_w = 0;
-		active_h = 0;
+		active_w = 128;
+		active_h = 128;
+		Textur = lo.Texturs_airLiners;
+	}
+	else if (id == 2) {
+		active_x = 128;
+		active_y = 0;
+		active_w = 128;
+		active_h = 128;
+		Textur = lo.Texturs_airLiners;
+	}
+	else if (id == 3) {
+		active_x = 256;
+		active_y = 0;
+		active_w = 128;
+		active_h = 128;
+		Textur = lo.Texturs_airLiners;
+	}
+	else if (id == 4) {
+		active_x = 386;
+		active_y = 0;
+		active_w = 128;
+		active_h = 128;
+		Textur = lo.Texturs_airLiners;
+	}
+	else if (id == 5) {
+		active_x = 512;
+		active_y = 0;
+		active_w = 128;
+		active_h = 128;
+		Textur = lo.Texturs_airLiners;
+	}
+	else if (id == 6) {
+		active_x = 640;
+		active_y = 0;
+		active_w = 128;
+		active_h = 128;
+		Textur = lo.Texturs_airLiners;
+	}
+	else if (id == 7) {
+		active_x = 768;
+		active_y = 0;
+		active_w = 128;
+		active_h = 128;
+		Textur = lo.Texturs_airLiners;
+	}
+	else if (id == 8) {
+		active_x = 896;
+		active_y = 0;
+		active_w = 128;
+		active_h = 128;
+		Textur = lo.Texturs_airLiners;
+	}
+	else if (id == 9) {
+		active_x = 1024;
+		active_y = 0;
+		active_w = 128;
+		active_h = 128;
+		Textur = lo.Texturs_airLiners;
+	}
+	else if (id == 10) {
+		active_x = 1152;
+		active_y = 0;
+		active_w = 128;
+		active_h = 128;
 		Textur = lo.Texturs_airLiners;
 	}
 };
