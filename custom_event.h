@@ -16,6 +16,8 @@ public:
 	int time2;
 	float real_time = 0;
 
+	int select_airline_game = 1;
+
 	clock_t current_ticks, delta_ticks;
 	clock_t fps = 0;
 };

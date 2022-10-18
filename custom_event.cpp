@@ -83,6 +83,23 @@ void custom_event::eve(event& ev) {
 	if (ev.focus_botton == "boot32") {
 		focus_windows = 11;
 	}
+
+
+	if (ev.focus_botton == "boot40") {
+		select_airline_game = 1;
+	}
+	if (ev.focus_botton == "boot41") {
+		select_airline_game = 2;
+	}
+	if (ev.focus_botton == "boot42") {
+		select_airline_game = 3;
+	}
+	if (ev.focus_botton == "boot43") {
+		select_airline_game = 4;
+	}
+	if (ev.focus_botton == "boot44") {
+		select_airline_game = 5;
+	}
 	
 	if (ev.focus_zone != "") {
 		std::cout << ev.focus_zone << std::endl;

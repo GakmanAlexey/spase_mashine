@@ -442,8 +442,34 @@ void scene::scena3(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
         window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x, y, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
     }
 
+    String sel_airline_1 = L"Выбрать";
+    String sel_airline_2 = L"Выбрать";
+    String sel_airline_3 = L"Выбрать";
+    String sel_airline_4 = L"Выбрать";
+    String sel_airline_5 = L"Выбрать";
+
+    if (c_e.select_airline_game == 1) {
+        sel_airline_1 = L"Выбран";
+    }
+    else if (c_e.select_airline_game == 2) {
+        sel_airline_2 = L"Выбран";
+    }
+    else if (c_e.select_airline_game == 3) {
+        sel_airline_3 = L"Выбран";
+    }
+    else if (c_e.select_airline_game == 4) {
+        sel_airline_4 = L"Выбран";
+    }
+    else if (c_e.select_airline_game == 5) {
+        sel_airline_5 = L"Выбран";
+    }
 
 
+    l.button(70, 540, 180, 50, sel_airline_1, 0, window, lo.Texturs_fonB, lo.base_font, "boot40", ev);
+    l.button(310, 540, 180, 50, sel_airline_2, 0, window, lo.Texturs_fonB, lo.base_font, "boot41", ev);
+    l.button(550, 540, 180, 50, sel_airline_3, 0, window, lo.Texturs_fonB, lo.base_font, "boot42", ev);
+    l.button(790, 540, 180, 50, sel_airline_4, 0, window, lo.Texturs_fonB, lo.base_font, "boot43", ev);
+    l.button(1030, 540, 180, 50, sel_airline_5, 0, window, lo.Texturs_fonB, lo.base_font, "boot44", ev);
 
 
     window.display();
@@ -472,49 +498,229 @@ void scene::scena4(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
     
 
 
+    if (c_e.select_airline_game == 1) {
+        if (inv.component_liner1[0] != 0) {
+            y = 600 + c_e.position_y;
+            x = x + c_e.position;
+            if (inv.component_liner1[1] != 0) {
+                dbi.select(inv.component_liner1[1]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner1[2] != 0) {
+                dbi.select(inv.component_liner1[2]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner1[3] != 0) {
+                dbi.select(inv.component_liner1[3]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner1[4] != 0) {
+                dbi.select(inv.component_liner1[4]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner1[5] != 0) {
+                dbi.select(inv.component_liner1[5]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner1[6] != 0) {
+                dbi.select(inv.component_liner1[6]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner1[7] != 0) {
+                dbi.select(inv.component_liner1[7]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner1[8] != 0) {
+                dbi.select(inv.component_liner1[8]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner1[9] != 0) {
+                dbi.select(inv.component_liner1[9]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 84, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            dbi.select(inv.component_liner1[0]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x, y, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
 
-    if (inv.component_liner1[0] != 0) {;
-        y = 600+ c_e.position_y;
+        }
+    }else if (c_e.select_airline_game == 2) {
+        if (inv.component_liner2[0] != 0) {
+            y = 600 + c_e.position_y;
+            x = x + c_e.position;
+            if (inv.component_liner2[1] != 0) {
+                dbi.select(inv.component_liner2[1]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner2[2] != 0) {
+                dbi.select(inv.component_liner2[2]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner2[3] != 0) {
+                dbi.select(inv.component_liner2[3]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner2[4] != 0) {
+                dbi.select(inv.component_liner2[4]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner2[5] != 0) {
+                dbi.select(inv.component_liner2[5]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner2[6] != 0) {
+                dbi.select(inv.component_liner2[6]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner2[7] != 0) {
+                dbi.select(inv.component_liner2[7]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner2[8] != 0) {
+                dbi.select(inv.component_liner2[8]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner2[9] != 0) {
+                dbi.select(inv.component_liner2[9]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 84, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            dbi.select(inv.component_liner2[0]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x, y, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+
+        }
+    }
+    else if (c_e.select_airline_game == 3) {
+        if (inv.component_liner3[0] != 0) {
+            y = 600 + c_e.position_y;
+            x = x + c_e.position;
+            if (inv.component_liner3[1] != 0) {
+                dbi.select(inv.component_liner3[1]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner3[2] != 0) {
+                dbi.select(inv.component_liner3[2]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner3[3] != 0) {
+                dbi.select(inv.component_liner3[3]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner3[4] != 0) {
+                dbi.select(inv.component_liner3[4]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner3[5] != 0) {
+                dbi.select(inv.component_liner3[5]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner3[6] != 0) {
+                dbi.select(inv.component_liner3[6]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner3[7] != 0) {
+                dbi.select(inv.component_liner3[7]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner3[8] != 0) {
+                dbi.select(inv.component_liner3[8]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            if (inv.component_liner3[9] != 0) {
+                dbi.select(inv.component_liner3[9]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 84, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
+            dbi.select(inv.component_liner3[0]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x, y, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+
+        }
+    }
+    else if (c_e.select_airline_game == 4) {
+    if (inv.component_liner4[0] != 0) {
+        y = 600 + c_e.position_y;
         x = x + c_e.position;
-        if (inv.component_liner1[1] != 0) {
-            dbi.select(inv.component_liner1[1]);
+        if (inv.component_liner4[1] != 0) {
+            dbi.select(inv.component_liner4[1]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
         }
-        if (inv.component_liner1[2] != 0) {
-            dbi.select(inv.component_liner1[2]);
+        if (inv.component_liner4[2] != 0) {
+            dbi.select(inv.component_liner4[2]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
         }
-        if (inv.component_liner1[3] != 0) {
-            dbi.select(inv.component_liner1[3]);
+        if (inv.component_liner4[3] != 0) {
+            dbi.select(inv.component_liner4[3]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
         }
-        if (inv.component_liner1[4] != 0) {
-            dbi.select(inv.component_liner1[4]);
+        if (inv.component_liner4[4] != 0) {
+            dbi.select(inv.component_liner4[4]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
         }
-        if (inv.component_liner1[5] != 0) {
-            dbi.select(inv.component_liner1[5]);
+        if (inv.component_liner4[5] != 0) {
+            dbi.select(inv.component_liner4[5]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
         }
-        if (inv.component_liner1[6] != 0) {
-            dbi.select(inv.component_liner1[6]);
+        if (inv.component_liner4[6] != 0) {
+            dbi.select(inv.component_liner4[6]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
         }
-        if (inv.component_liner1[7] != 0) {
-            dbi.select(inv.component_liner1[7]);
+        if (inv.component_liner4[7] != 0) {
+            dbi.select(inv.component_liner4[7]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
         }
-        if (inv.component_liner1[8] != 0) {
-            dbi.select(inv.component_liner1[8]);
+        if (inv.component_liner4[8] != 0) {
+            dbi.select(inv.component_liner4[8]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
         }
-        if (inv.component_liner1[9] != 0) {
-            dbi.select(inv.component_liner1[9]);
+        if (inv.component_liner4[9] != 0) {
+            dbi.select(inv.component_liner4[9]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 84, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
         }
-        dbi.select(inv.component_liner1[0]);
+        dbi.select(inv.component_liner4[0]);
         window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x, y, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
 
+    }
+    }
+    else if (c_e.select_airline_game == 5) {
+    if (inv.component_liner5[0] != 0) {
+        y = 600 + c_e.position_y;
+        x = x + c_e.position;
+        if (inv.component_liner5[1] != 0) {
+            dbi.select(inv.component_liner5[1]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[2] != 0) {
+            dbi.select(inv.component_liner5[2]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[3] != 0) {
+            dbi.select(inv.component_liner5[3]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[4] != 0) {
+            dbi.select(inv.component_liner5[4]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[5] != 0) {
+            dbi.select(inv.component_liner5[5]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[6] != 0) {
+            dbi.select(inv.component_liner5[6]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[7] != 0) {
+            dbi.select(inv.component_liner5[7]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[8] != 0) {
+            dbi.select(inv.component_liner5[8]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[9] != 0) {
+            dbi.select(inv.component_liner5[9]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 84, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        dbi.select(inv.component_liner5[0]);
+        window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x, y, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+
+    }
     }
 
 
