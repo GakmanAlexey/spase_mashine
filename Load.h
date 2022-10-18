@@ -33,6 +33,11 @@ public:
 	Image Img_airline_list;
 	Texture Texturs_airline_list;
 
+	Image Img_matrix_liners;
+	Texture Texturs_matrix_liners;
+	Image Img_matrix_mods;
+	Texture Texturs_matrix_mods;
+
 
 	void font();
 	void img();

@@ -50,13 +50,13 @@ void Inventory::load_resourse() {
 void Inventory::load_liners() {
 	component_liner1.push_back(1);//корпус
 	component_liner1.push_back(11);//пушка1
-	component_liner1.push_back(11);//пушка2
-	component_liner1.push_back(11);//пушка3
-	component_liner1.push_back(11);//пушка4
+	component_liner1.push_back(12);//пушка2
+	component_liner1.push_back(13);//пушка3
+	component_liner1.push_back(14);//пушка4
 	component_liner1.push_back(11);//пушка5
 	component_liner1.push_back(11);//пушка6
 	component_liner1.push_back(11);//пушка7
-	component_liner1.push_back(11);//движек
+	component_liner1.push_back(13);//движек
 	component_liner1.push_back(11);//щит
 	component_liner1.push_back(11);//Обвес(генератор)
 	component_liner1.push_back(0);//Обвес
@@ -66,12 +66,12 @@ void Inventory::load_liners() {
 
 	component_liner2.push_back(2);//корпус
 	component_liner2.push_back(11);//пушка1
-	component_liner2.push_back(11);//пушка2
+	component_liner2.push_back(13);//пушка2
 	component_liner2.push_back(11);//пушка3
 	component_liner2.push_back(11);//пушка4
-	component_liner2.push_back(11);//пушка5
+	component_liner2.push_back(13);//пушка5
 	component_liner2.push_back(11);//пушка6
-	component_liner2.push_back(11);//пушка7
+	component_liner2.push_back(14);//пушка7
 	component_liner2.push_back(11);//движек
 	component_liner2.push_back(11);//щит
 	component_liner2.push_back(0);//Обвес(генератор)
@@ -82,13 +82,13 @@ void Inventory::load_liners() {
 
 	component_liner3.push_back(3);//корпус
 	component_liner3.push_back(11);//пушка1
-	component_liner3.push_back(11);//пушка2
-	component_liner3.push_back(11);//пушка3
+	component_liner3.push_back(17);//пушка2
+	component_liner3.push_back(17);//пушка3
 	component_liner3.push_back(11);//пушка4
-	component_liner3.push_back(11);//пушка5
-	component_liner3.push_back(11);//пушка6
+	component_liner3.push_back(15);//пушка5
+	component_liner3.push_back(15);//пушка6
 	component_liner3.push_back(11);//пушка7
-	component_liner3.push_back(11);//движек
+	component_liner3.push_back(17);//движек
 	component_liner3.push_back(11);//щит
 	component_liner3.push_back(11);//Обвес(генератор)
 	component_liner3.push_back(0);//Обвес
@@ -97,13 +97,13 @@ void Inventory::load_liners() {
 	component_liner3.push_back(0);//Обвес
 
 	component_liner4.push_back(4);//корпус
-	component_liner4.push_back(11);//пушка1
-	component_liner4.push_back(11);//пушка2
-	component_liner4.push_back(11);//пушка3
-	component_liner4.push_back(11);//пушка4
+	component_liner4.push_back(17);//пушка1
+	component_liner4.push_back(17);//пушка2
+	component_liner4.push_back(15);//пушка3
+	component_liner4.push_back(15);//пушка4
 	component_liner4.push_back(11);//пушка5
-	component_liner4.push_back(11);//пушка6
-	component_liner4.push_back(11);//пушка7
+	component_liner4.push_back(13);//пушка6
+	component_liner4.push_back(13);//пушка7
 	component_liner4.push_back(11);//движек
 	component_liner4.push_back(11);//щит
 	component_liner4.push_back(11);//Обвес(генератор)
@@ -113,14 +113,14 @@ void Inventory::load_liners() {
 	component_liner4.push_back(0);//Обвес
 
 	component_liner5.push_back(5);//корпус
-	component_liner5.push_back(0);//пушка1
-	component_liner5.push_back(0);//пушка2
-	component_liner5.push_back(0);//пушка3
-	component_liner5.push_back(0);//пушка4
-	component_liner5.push_back(0);//пушка5
-	component_liner5.push_back(0);//пушка6
-	component_liner5.push_back(0);//пушка7
-	component_liner5.push_back(0);//движек
+	component_liner5.push_back(17);//пушка1
+	component_liner5.push_back(17);//пушка2
+	component_liner5.push_back(15);//пушка3
+	component_liner5.push_back(15);//пушка4
+	component_liner5.push_back(11);//пушка5
+	component_liner5.push_back(13);//пушка6
+	component_liner5.push_back(13);//пушка7
+	component_liner5.push_back(11);//движек
 	component_liner5.push_back(0);//щит
 	component_liner5.push_back(0);//Обвес(генератор)
 	component_liner5.push_back(0);//Обвес
