@@ -3,6 +3,18 @@
 #include <iostream>
 
 void custom_event::eve(event& ev) {
+	time = std::clock();
+	real_time += time - time2;
+	time2 = time;
+	//std::cout << CurrentFrame << std::endl;
+	if (real_time > 5) {
+		CurrentFrame = 1;
+		real_time = 0;
+	}
+	else {
+		CurrentFrame = 0;
+	}
+
 	if (ev.focus_botton == "boot1") {
 		focus_windows = 2;
 	}
@@ -68,8 +80,35 @@ void custom_event::eve(event& ev) {
 		active_save = 10;
 	}
 
+	if (ev.focus_botton == "boot32") {
+		focus_windows = 11;
+	}
+	
 	if (ev.focus_zone != "") {
 		std::cout << ev.focus_zone << std::endl;
 	}
+	if (focus_windows == 11) {
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)) {
+			if (position > 0) {
+				position = position - CurrentFrame;
+			}
+		}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)) {
+			if (position < 1152) {
+				position = position + CurrentFrame;
+			}
+		}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {
+			if (position_y > -600) {
+				position_y = position_y - CurrentFrame;
+			}
+		}
+		if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {
+			if (position_y < 10) {
+				position_y = position_y + CurrentFrame;
+			}
+		}
+	}
+		
 
 };

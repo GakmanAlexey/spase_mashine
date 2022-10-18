@@ -17,6 +17,9 @@ void scene::main(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, s
     else if (c_e.focus_windows == 10) {
         scena3(cfg, ev, lo, l, f, c_e, window, b, inv, db, dbi);
     }
+    else if (c_e.focus_windows == 11) {
+        scena4(cfg, ev, lo, l, f, c_e, window, b, inv, db, dbi);
+    }
 };
 
 void scene::scena1(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi) {
@@ -445,4 +448,108 @@ void scene::scena3(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
 
     window.display();
     c_e.eve(ev);
+};
+
+
+void scene::scena4(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi) {
+
+
+    int x = 0;
+    int y = 0;
+    sf::Sprite sprite1;
+    sf::Sprite sprite2;
+
+    sf::Sprite airline;
+    sf::Sprite module;
+    sf::Sprite liners;
+    sf::Event evsf;
+    ev.sf_ev(evsf, window);
+    // ----------------------------------
+    window.clear(Color(0, 0, 0, 255));
+    ev.boot_clear();
+
+    scena4_fon(cfg, ev, lo, l, f, c_e, window, b, inv, db, dbi);
+    
+
+
+
+    if (inv.component_liner1[0] != 0) {;
+        y = 600+ c_e.position_y;
+        x = x + c_e.position;
+        if (inv.component_liner1[1] != 0) {
+            dbi.select(inv.component_liner1[1]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[2] != 0) {
+            dbi.select(inv.component_liner1[2]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[3] != 0) {
+            dbi.select(inv.component_liner1[3]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[4] != 0) {
+            dbi.select(inv.component_liner1[4]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[5] != 0) {
+            dbi.select(inv.component_liner1[5]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[6] != 0) {
+            dbi.select(inv.component_liner1[6]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[7] != 0) {
+            dbi.select(inv.component_liner1[7]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[8] != 0) {
+            dbi.select(inv.component_liner1[8]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[9] != 0) {
+            dbi.select(inv.component_liner1[9]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 84, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        dbi.select(inv.component_liner1[0]);
+        window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x, y, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+
+    }
+
+
+
+
+
+
+    window.display();
+    c_e.eve(ev);
+};
+
+
+void scene::scena4_fon(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi) {
+    Sprite sprite1;
+    pos_fon_i += 0.1;
+
+    if (pos_fon_i > 1) {
+        pos_fon_i = 0;
+        pos_fon--;
+        pos_fon2--;
+    }
+    if (pos_fon == -6480)
+    {
+        pos_fon = 7200;
+    }
+    if (pos_fon2 == -6480)
+    {
+        pos_fon2 = 7200;
+    }
+        window.draw(f.show_F(sprite1, lo.Texturs_fon_area, 0, 0 - pos_fon));
+        window.draw(f.show_F(sprite1, lo.Texturs_fon_area, 0, 0 - pos_fon2));
+    
+    //    window.draw(f.show_F(sprite1, lo.Texturs_fon_area, 0 - pos_fon2, 0));
+    
+
+    
+    
 };

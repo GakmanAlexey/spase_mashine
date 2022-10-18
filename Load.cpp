@@ -19,6 +19,7 @@ void Load::img() {
 	Img_airline_list.loadFromFile(cfg.direct_root + cfg.direct_img + "fon_select_li.png");
 	Img_matrix_liners.loadFromFile(cfg.direct_root + cfg.direct_img + "matrix_liners.png");
 	Img_matrix_mods.loadFromFile(cfg.direct_root + cfg.direct_img + "weapon_meteor.png");
+	Img_fon_area.loadFromFile(cfg.direct_root + cfg.direct_img + "fon_game_area.png");
 
 
 };
@@ -33,7 +34,10 @@ void Load::texturs() {
 	Texturs_airline_list.loadFromImage(Img_airline_list);
 	Texturs_matrix_liners.loadFromImage(Img_matrix_liners);
 	Texturs_matrix_mods.loadFromImage(Img_matrix_mods);
+	Texturs_fon_area.loadFromImage(Img_fon_area);
 };
+
+
 
 
 

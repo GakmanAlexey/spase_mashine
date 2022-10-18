@@ -38,6 +38,8 @@ public:
 	Image Img_matrix_mods;
 	Texture Texturs_matrix_mods;
 
+	Image Img_fon_area;
+	Texture Texturs_fon_area;
 
 	void font();
 	void img();

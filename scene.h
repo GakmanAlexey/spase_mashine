@@ -17,6 +17,12 @@
 class scene
 {
 public:
+	int pos_fon = 7200;
+	int pos_fon2 = 0;
+	float pos_fon_i = 0;
+	bool leauer = true;
+
+
 	int sce = 1;
 	bool scena2_preload_flag = false;
 
@@ -82,5 +88,7 @@ public:
 	void scena2(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi);
 	void scena2_preload(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi);
 	void scena3(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi);
+	void scena4(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi);
+	void scena4_fon(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi);
 };
 
