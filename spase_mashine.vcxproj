@@ -132,8 +132,10 @@
     <ClCompile Include="custom_event.cpp" />
     <ClCompile Include="date_base.cpp" />
     <ClCompile Include="date_base_img.cpp" />
+    <ClCompile Include="date_base_snar_img.cpp" />
     <ClCompile Include="event.cpp" />
     <ClCompile Include="F.cpp" />
+    <ClCompile Include="fly_sn.cpp" />
     <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="L.cpp" />
     <ClCompile Include="Load.cpp" />
@@ -150,8 +152,10 @@
     <ClInclude Include="custom_event.h" />
     <ClInclude Include="date_base.h" />
     <ClInclude Include="date_base_img.h" />
+    <ClInclude Include="date_base_snar_img.h" />
     <ClInclude Include="event.h" />
     <ClInclude Include="F.h" />
+    <ClInclude Include="fly_sn.h" />
     <ClInclude Include="Inventory.h" />
     <ClInclude Include="L.h" />
     <ClInclude Include="Load.h" />

@@ -495,8 +495,9 @@ void scene::scena4(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
     ev.boot_clear();
 
     scena4_fon(cfg, ev, lo, l, f, c_e, window, b, inv, db, dbi);
-    
+    scena4_snaryad(cfg, ev, lo, l, f, c_e, window, b, inv, db, dbi);
 
+ 
 
     if (c_e.select_airline_game == 1) {
         if (inv.component_liner1[0] != 0) {
@@ -505,30 +506,51 @@ void scene::scena4(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
             if (inv.component_liner1[1] != 0) {
                 dbi.select(inv.component_liner1[1]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == 10) {
+                    fl.add_frend(x + 56, y + 28, 1, 1);
+                }
             }
             if (inv.component_liner1[2] != 0) {
                 dbi.select(inv.component_liner1[2]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == 10) {
+                    fl.add_frend(x + 40, y + 44, 1, 1);
+                }
             }
             if (inv.component_liner1[3] != 0) {
                 dbi.select(inv.component_liner1[3]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == 10) {
+                    fl.add_frend(x + 72, y + 44, 1, 1);
+                }
             }
             if (inv.component_liner1[4] != 0) {
                 dbi.select(inv.component_liner1[4]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == 10) {
+                    fl.add_frend(x + 24, y + 60, 1, 1);
+                }
             }
             if (inv.component_liner1[5] != 0) {
                 dbi.select(inv.component_liner1[5]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == 10) {
+                    fl.add_frend(x + 88, y + 60, 1, 1);
+                }
             }
             if (inv.component_liner1[6] != 0) {
                 dbi.select(inv.component_liner1[6]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == 10) {
+                    fl.add_frend(x + 8, y + 76, 1, 1);
+                }
             }
             if (inv.component_liner1[7] != 0) {
                 dbi.select(inv.component_liner1[7]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == 10) {
+                    fl.add_frend(x + 104, y + 76, 1, 1);
+                }
             }
             if (inv.component_liner1[8] != 0) {
                 dbi.select(inv.component_liner1[8]);
@@ -727,6 +749,9 @@ void scene::scena4(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
 
 
 
+    if (fly_i == 10) {
+        fly_i = 0;
+    }
 
     window.display();
     c_e.eve(ev);
@@ -758,4 +783,28 @@ void scene::scena4_fon(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& 
 
     
     
+};
+
+void scene::scena4_snaryad(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi) {
+    Sprite sp1;
+    int i = 0;
+    if (c_e.CurrentFrame == 1) {
+        fly_i_cef++;
+        if (fly_i_cef == 3) {
+            fly_i_cef = 0;
+            fly_i++;
+        }
+    }
+    if (fly_i == 10) {
+        fl.move();
+    }
+    while (i < fl.type_id.size()) {
+
+        db_scn.select(fl.type_id[i]);
+        window.draw(f.show_S(sp1, lo.Texturs_matrix_mods, fl.frend_x[i], fl.frend_y[i], db_scn.active_x, db_scn.active_y, db_scn.active_w, db_scn.active_h));
+
+        i++;
+    }
+    fl.move();
+
 };

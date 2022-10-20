@@ -14,9 +14,17 @@
 #include "Inventory.h"
 #include "date_base.h"
 #include "date_base_img.h"
+#include "fly_sn.h"
+#include "date_base_snar_img.h"
 class scene
 {
 public:
+
+	fly_sn fl;
+	date_base_snar_img db_scn;
+	int fly_i_cef = 0;
+
+	int fly_i = 0;
 	int pos_fon = 7200;
 	int pos_fon2 = 0;
 	float pos_fon_i = 0;
@@ -90,5 +98,6 @@ public:
 	void scena3(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi);
 	void scena4(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi);
 	void scena4_fon(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi);
+	void scena4_snaryad(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi);
 };
 
