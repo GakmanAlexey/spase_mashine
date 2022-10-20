@@ -507,21 +507,21 @@ void scene::scena4(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
                 dbi.select(inv.component_liner1[1]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
                 if (fly_i == 10) {
-                    fl.add_frend(x + 56, y + 28, 1, 1);
+                    fl.add_frend(x + 56, y + 28, 2, 1);
                 }
             }
             if (inv.component_liner1[2] != 0) {
                 dbi.select(inv.component_liner1[2]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
                 if (fly_i == 10) {
-                    fl.add_frend(x + 40, y + 44, 1, 1);
+                    fl.add_frend(x + 40, y + 44, 3, 1);
                 }
             }
             if (inv.component_liner1[3] != 0) {
                 dbi.select(inv.component_liner1[3]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
                 if (fly_i == 10) {
-                    fl.add_frend(x + 72, y + 44, 1, 1);
+                    fl.add_frend(x + 72, y + 44, 3, 1);
                 }
             }
             if (inv.component_liner1[4] != 0) {

@@ -9,6 +9,25 @@ void fly_sn::add_frend(int start_x, int start_y, int speed, int type_ids) {
 };
 void fly_sn::distructr_frend(int id) {
 
+	frend_x.erase(frend_x.begin() + id);
+	std::vector<int>(frend_x).swap(frend_x);
+
+
+	frend_y.erase(frend_y.begin() + id);
+	std::vector<int>(frend_y).swap(frend_y);
+
+
+	frend_speed.erase(frend_speed.begin() + id);
+	std::vector<int>(frend_speed).swap(frend_speed);
+
+
+	frend_isset.erase(frend_isset.begin() + id);
+	std::vector<int>(frend_isset).swap(frend_isset);
+
+
+	type_id.erase(type_id.begin() + id);
+	std::vector<int>(type_id).swap(type_id);
+	
 };
 void fly_sn::move() {
 	if (!flag_job) {
