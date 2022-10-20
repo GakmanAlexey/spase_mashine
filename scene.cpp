@@ -506,49 +506,49 @@ void scene::scena4(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
             if (inv.component_liner1[1] != 0) {
                 dbi.select(inv.component_liner1[1]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
-                if (fly_i == 10) {
+                if (fly_i == fl.min_count) {
                     fl.add_frend(x + 56, y + 28, 2, 1);
                 }
             }
             if (inv.component_liner1[2] != 0) {
                 dbi.select(inv.component_liner1[2]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
-                if (fly_i == 10) {
+                if (fly_i == fl.min_count) {
                     fl.add_frend(x + 40, y + 44, 3, 1);
                 }
             }
             if (inv.component_liner1[3] != 0) {
                 dbi.select(inv.component_liner1[3]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
-                if (fly_i == 10) {
+                if (fly_i == fl.min_count) {
                     fl.add_frend(x + 72, y + 44, 3, 1);
                 }
             }
             if (inv.component_liner1[4] != 0) {
                 dbi.select(inv.component_liner1[4]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
-                if (fly_i == 10) {
+                if (fly_i == fl.min_count) {
                     fl.add_frend(x + 24, y + 60, 1, 1);
                 }
             }
             if (inv.component_liner1[5] != 0) {
                 dbi.select(inv.component_liner1[5]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
-                if (fly_i == 10) {
+                if (fly_i == fl.min_count) {
                     fl.add_frend(x + 88, y + 60, 1, 1);
                 }
             }
             if (inv.component_liner1[6] != 0) {
                 dbi.select(inv.component_liner1[6]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
-                if (fly_i == 10) {
+                if (fly_i == fl.min_count) {
                     fl.add_frend(x + 8, y + 76, 1, 1);
                 }
             }
             if (inv.component_liner1[7] != 0) {
                 dbi.select(inv.component_liner1[7]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
-                if (fly_i == 10) {
+                if(fly_i == fl.min_count) {
                     fl.add_frend(x + 104, y + 76, 1, 1);
                 }
             }
@@ -571,30 +571,51 @@ void scene::scena4(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
             if (inv.component_liner2[1] != 0) {
                 dbi.select(inv.component_liner2[1]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == fl.min_count) {
+                    fl.add_frend(x + 56, y + 28, 3, 1);
+                }
             }
             if (inv.component_liner2[2] != 0) {
                 dbi.select(inv.component_liner2[2]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == fl.min_count) {
+                    fl.add_frend(x + 40, y + 44, 3, 1);
+                }
             }
             if (inv.component_liner2[3] != 0) {
                 dbi.select(inv.component_liner2[3]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == fl.min_count) {
+                    fl.add_frend(x + 72, y + 44, 3, 1);
+                }
             }
             if (inv.component_liner2[4] != 0) {
                 dbi.select(inv.component_liner2[4]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == fl.min_count) {
+                    fl.add_frend(x + 24, y + 60, 3, 1);
+                }
             }
             if (inv.component_liner2[5] != 0) {
                 dbi.select(inv.component_liner2[5]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == fl.min_count) {
+                    fl.add_frend(x + 88, y + 60, 3, 1);
+                }
             }
             if (inv.component_liner2[6] != 0) {
                 dbi.select(inv.component_liner2[6]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == fl.min_count) {
+                    fl.add_frend(x + 8, y + 76, 3, 1);
+                }
             }
             if (inv.component_liner2[7] != 0) {
                 dbi.select(inv.component_liner2[7]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == fl.min_count) {
+                    fl.add_frend(x + 104, y + 76, 3, 1);
+                }
             }
             if (inv.component_liner2[8] != 0) {
                 dbi.select(inv.component_liner2[8]);
@@ -616,30 +637,51 @@ void scene::scena4(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
             if (inv.component_liner3[1] != 0) {
                 dbi.select(inv.component_liner3[1]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == fl.min_count) {
+                    fl.add_frend(x + 56, y + 28, 3, 1);
+                }
             }
             if (inv.component_liner3[2] != 0) {
                 dbi.select(inv.component_liner3[2]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == fl.min_count) {
+                    fl.add_frend(x + 40, y + 44, 3, 1);
+                }
             }
             if (inv.component_liner3[3] != 0) {
                 dbi.select(inv.component_liner3[3]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == fl.min_count) {
+                    fl.add_frend(x + 72, y + 44, 3, 1);
+                }
             }
             if (inv.component_liner3[4] != 0) {
                 dbi.select(inv.component_liner3[4]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == fl.min_count) {
+                    fl.add_frend(x + 24, y + 60, 3, 1);
+                }
             }
             if (inv.component_liner3[5] != 0) {
                 dbi.select(inv.component_liner3[5]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == fl.min_count) {
+                    fl.add_frend(x + 88, y + 60, 3, 1);
+                }
             }
             if (inv.component_liner3[6] != 0) {
                 dbi.select(inv.component_liner3[6]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == fl.min_count) {
+                    fl.add_frend(x + 8, y + 76, 3, 1);
+                }
             }
             if (inv.component_liner3[7] != 0) {
                 dbi.select(inv.component_liner3[7]);
                 window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+                if (fly_i == fl.min_count) {
+                    fl.add_frend(x + 104, y + 76, 3, 1);
+                }
             }
             if (inv.component_liner3[8] != 0) {
                 dbi.select(inv.component_liner3[8]);
@@ -661,30 +703,51 @@ void scene::scena4(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
         if (inv.component_liner4[1] != 0) {
             dbi.select(inv.component_liner4[1]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            if (fly_i == fl.min_count) {
+                fl.add_frend(x + 56, y + 28, 3, 1);
+            }
         }
         if (inv.component_liner4[2] != 0) {
             dbi.select(inv.component_liner4[2]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            if (fly_i == fl.min_count) {
+                fl.add_frend(x + 40, y + 44, 3, 1);
+            }
         }
         if (inv.component_liner4[3] != 0) {
             dbi.select(inv.component_liner4[3]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            if (fly_i == fl.min_count) {
+                fl.add_frend(x + 72, y + 44, 3, 1);
+            }
         }
         if (inv.component_liner4[4] != 0) {
             dbi.select(inv.component_liner4[4]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            if (fly_i == fl.min_count) {
+                fl.add_frend(x + 24, y + 60, 3, 1);
+            }
         }
         if (inv.component_liner4[5] != 0) {
             dbi.select(inv.component_liner4[5]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            if (fly_i == fl.min_count) {
+                fl.add_frend(x + 88, y + 60, 3, 1);
+            }
         }
         if (inv.component_liner4[6] != 0) {
             dbi.select(inv.component_liner4[6]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            if (fly_i == fl.min_count) {
+                fl.add_frend(x + 8, y + 76, 3, 1);
+            }
         }
         if (inv.component_liner4[7] != 0) {
             dbi.select(inv.component_liner4[7]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            if (fly_i == fl.min_count) {
+                fl.add_frend(x + 8, y + 76, 3, 1);
+            }
         }
         if (inv.component_liner4[8] != 0) {
             dbi.select(inv.component_liner4[8]);
@@ -706,30 +769,51 @@ void scene::scena4(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
         if (inv.component_liner5[1] != 0) {
             dbi.select(inv.component_liner5[1]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            if (fly_i == fl.min_count) {
+                fl.add_frend(x + 56, y + 28, 3, 1);
+            }
         }
         if (inv.component_liner5[2] != 0) {
             dbi.select(inv.component_liner5[2]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            if (fly_i == fl.min_count) {
+                fl.add_frend(x + 40, y + 44, 3, 1);
+            }
         }
         if (inv.component_liner5[3] != 0) {
             dbi.select(inv.component_liner5[3]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            if (fly_i == fl.min_count) {
+                fl.add_frend(x + 72, y + 44, 3, 1);
+            }
         }
         if (inv.component_liner5[4] != 0) {
             dbi.select(inv.component_liner5[4]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            if (fly_i == fl.min_count) {
+                fl.add_frend(x + 24, y + 60, 3, 1);
+            }
         }
         if (inv.component_liner5[5] != 0) {
             dbi.select(inv.component_liner5[5]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            if (fly_i == fl.min_count) {
+                fl.add_frend(x + 88, y + 60, 3, 1);
+            }
         }
         if (inv.component_liner5[6] != 0) {
             dbi.select(inv.component_liner5[6]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            if (fly_i == fl.min_count) {
+                fl.add_frend(x + 8, y + 76, 3, 1);
+            }
         }
         if (inv.component_liner5[7] != 0) {
             dbi.select(inv.component_liner5[7]);
             window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            if (fly_i == fl.min_count) {
+                fl.add_frend(x + 104, y + 76, 3, 1);
+            }
         }
         if (inv.component_liner5[8] != 0) {
             dbi.select(inv.component_liner5[8]);
@@ -777,8 +861,6 @@ void scene::scena4_fon(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& 
     }
         window.draw(f.show_F(sprite1, lo.Texturs_fon_area, 0, 0 - pos_fon));
         window.draw(f.show_F(sprite1, lo.Texturs_fon_area, 0, 0 - pos_fon2));
-    
-    //    window.draw(f.show_F(sprite1, lo.Texturs_fon_area, 0 - pos_fon2, 0));
     
 
     

@@ -11,6 +11,8 @@ public:
 	int base_speed = 2;
 	int base_speed_x = 0;
 
+	int min_count = 5;
+
 	bool flag_job = false;
 
 	void add_frend(int start_x, int start_y, int speed, int type_ids);
