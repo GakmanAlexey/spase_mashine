@@ -20,6 +20,7 @@ void Load::img() {
 	Img_matrix_liners.loadFromFile(cfg.direct_root + cfg.direct_img + "matrix_liners.png");
 	Img_matrix_mods.loadFromFile(cfg.direct_root + cfg.direct_img + "weapon_meteor.png");
 	Img_fon_area.loadFromFile(cfg.direct_root + cfg.direct_img + "fon_game_area.png");
+	Img_fon_inv.loadFromFile(cfg.direct_root + cfg.direct_img + "inventar_gui.png");
 
 
 };
@@ -35,7 +36,9 @@ void Load::texturs() {
 	Texturs_matrix_liners.loadFromImage(Img_matrix_liners);
 	Texturs_matrix_mods.loadFromImage(Img_matrix_mods);
 	Texturs_fon_area.loadFromImage(Img_fon_area);
+	Texturs_fon_inv.loadFromImage(Img_fon_inv);
 };
+
 
 
 

@@ -49,14 +49,14 @@ void Inventory::load_resourse() {
 };
 void Inventory::load_liners() {
 	component_liner1.push_back(1);//корпус
-	component_liner1.push_back(11);//пушка1
-	component_liner1.push_back(12);//пушка2
-	component_liner1.push_back(13);//пушка3
-	component_liner1.push_back(14);//пушка4
-	component_liner1.push_back(11);//пушка5
-	component_liner1.push_back(11);//пушка6
-	component_liner1.push_back(11);//пушка7
-	component_liner1.push_back(13);//движек
+	component_liner1.push_back(14);//пушка1
+	component_liner1.push_back(15);//пушка2
+	component_liner1.push_back(19);//пушка3
+	component_liner1.push_back(18);//пушка4
+	component_liner1.push_back(12);//пушка5
+	component_liner1.push_back(13);//пушка6
+	component_liner1.push_back(14);//пушка7
+	component_liner1.push_back(15);//движек
 	component_liner1.push_back(11);//щит
 	component_liner1.push_back(11);//Обвес(генератор)
 	component_liner1.push_back(0);//Обвес

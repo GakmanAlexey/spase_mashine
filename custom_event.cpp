@@ -80,8 +80,16 @@ void custom_event::eve(event& ev) {
 		active_save = 10;
 	}
 
+	if (ev.focus_botton == "boot30") {
+		focus_windows = 12;
+	}
+
 	if (ev.focus_botton == "boot32") {
 		focus_windows = 11;
+	}
+
+	if (ev.focus_botton == "boot39") {
+		focus_windows = 10;
 	}
 
 

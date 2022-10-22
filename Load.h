@@ -41,6 +41,9 @@ public:
 	Image Img_fon_area;
 	Texture Texturs_fon_area;
 
+	Image Img_fon_inv;
+	Texture Texturs_fon_inv;
+
 	void font();
 	void img();
 	void texturs();

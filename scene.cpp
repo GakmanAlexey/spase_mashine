@@ -20,6 +20,9 @@ void scene::main(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, s
     else if (c_e.focus_windows == 11) {
         scena4(cfg, ev, lo, l, f, c_e, window, b, inv, db, dbi);
     }
+    else if (c_e.focus_windows == 12) {
+        scena5(cfg, ev, lo, l, f, c_e, window, b, inv, db, dbi);
+    }
 };
 
 void scene::scena1(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi) {
@@ -889,4 +892,464 @@ void scene::scena4_snaryad(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_eve
     }
     fl.move();
 
+};
+
+void scene::scena5(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e, sf::RenderWindow& window, brain& b, Inventory& inv, date_base& db, date_base_img& dbi) {
+    int x = 0;
+    int y = 0;
+    sf::Sprite sprite1;
+    sf::Sprite sprite2;
+
+    sf::Sprite airline;
+    sf::Sprite module;
+    sf::Sprite liners;
+    sf::Event evsf;
+    ev.sf_ev(evsf, window);
+    // ----------------------------------
+    window.clear(Color(0, 0, 0, 255));
+    ev.boot_clear();
+
+
+    l.fon(window, lo.Texturs_fonG);
+    l.fon(window, lo.Texturs_fon_inv);
+
+    l.button(800, 650, 300, 50, L"Назад", 0, window, lo.Texturs_fonB, lo.base_font, "boot39", ev);
+
+
+
+    if (inv.component_liner1[0] != 0) {
+        x = 15;
+        y = 12;
+        if (inv.component_liner1[1] != 0) {
+            dbi.select(inv.component_liner1[1]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[2] != 0) {
+            dbi.select(inv.component_liner1[2]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[3] != 0) {
+            dbi.select(inv.component_liner1[3]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[4] != 0) {
+            dbi.select(inv.component_liner1[4]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[5] != 0) {
+            dbi.select(inv.component_liner1[5]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[6] != 0) {
+            dbi.select(inv.component_liner1[6]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[7] != 0) {
+            dbi.select(inv.component_liner1[7]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[8] != 0) {
+            dbi.select(inv.component_liner1[8]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[9] != 0) {
+            dbi.select(inv.component_liner1[9]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 84, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        dbi.select(inv.component_liner1[0]);
+        window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x, y, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+
+    }
+
+    if (inv.component_liner2[0] != 0) {
+        x = 15;
+        y = 152;
+        if (inv.component_liner2[1] != 0) {
+            dbi.select(inv.component_liner2[1]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner2[2] != 0) {
+            dbi.select(inv.component_liner2[2]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner2[3] != 0) {
+            dbi.select(inv.component_liner2[3]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner2[4] != 0) {
+            dbi.select(inv.component_liner2[4]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner2[5] != 0) {
+            dbi.select(inv.component_liner2[5]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner2[6] != 0) {
+            dbi.select(inv.component_liner2[6]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner2[7] != 0) {
+            dbi.select(inv.component_liner2[7]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner2[8] != 0) {
+            dbi.select(inv.component_liner2[8]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner2[9] != 0) {
+            dbi.select(inv.component_liner2[9]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 84, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+
+        dbi.select(inv.component_liner2[0]);
+        window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x, y, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+    }
+
+    if (inv.component_liner3[0] != 0) {
+
+        x = 15;
+        y = 292;
+        if (inv.component_liner3[1] != 0) {
+            dbi.select(inv.component_liner3[1]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner3[2] != 0) {
+            dbi.select(inv.component_liner3[2]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner3[3] != 0) {
+            dbi.select(inv.component_liner3[3]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner3[4] != 0) {
+            dbi.select(inv.component_liner3[4]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner3[5] != 0) {
+            dbi.select(inv.component_liner3[5]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner3[6] != 0) {
+            dbi.select(inv.component_liner3[6]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner3[7] != 0) {
+            dbi.select(inv.component_liner3[7]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner3[8] != 0) {
+            dbi.select(inv.component_liner3[8]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner3[9] != 0) {
+            dbi.select(inv.component_liner3[9]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 84, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+
+        dbi.select(inv.component_liner3[0]);
+        window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x, y, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+    }
+
+
+    if (inv.component_liner4[0] != 0) {
+        x = 15;
+        y = 432;
+        if (inv.component_liner4[1] != 0) {
+            dbi.select(inv.component_liner4[1]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner4[2] != 0) {
+            dbi.select(inv.component_liner4[2]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner4[3] != 0) {
+            dbi.select(inv.component_liner4[3]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner4[4] != 0) {
+            dbi.select(inv.component_liner4[4]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner4[5] != 0) {
+            dbi.select(inv.component_liner4[5]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner4[6] != 0) {
+            dbi.select(inv.component_liner4[6]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner4[7] != 0) {
+            dbi.select(inv.component_liner4[7]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner4[8] != 0) {
+            dbi.select(inv.component_liner4[8]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner4[9] != 0) {
+            dbi.select(inv.component_liner4[9]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 84, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+
+        dbi.select(inv.component_liner4[0]);
+        window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x, y, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+    }
+
+    if (inv.component_liner5[0] != 0) {
+        x = 15;
+        y = 572;
+        if (inv.component_liner5[1] != 0) {
+            dbi.select(inv.component_liner5[1]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[2] != 0) {
+            dbi.select(inv.component_liner5[2]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[3] != 0) {
+            dbi.select(inv.component_liner5[3]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[4] != 0) {
+            dbi.select(inv.component_liner5[4]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[5] != 0) {
+            dbi.select(inv.component_liner5[5]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[6] != 0) {
+            dbi.select(inv.component_liner5[6]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[7] != 0) {
+            dbi.select(inv.component_liner5[7]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[8] != 0) {
+            dbi.select(inv.component_liner5[8]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[9] != 0) {
+            dbi.select(inv.component_liner5[9]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 84, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+
+        dbi.select(inv.component_liner5[0]);
+        window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x, y, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+    }
+
+    if (inv.component_liner1[0] != 0) {
+        x = 152;
+        y = 12;
+        if (inv.component_liner1[1] != 0) {
+            dbi.select(inv.component_liner1[1]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[2] != 0) {
+            dbi.select(inv.component_liner1[2]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[3] != 0) {
+            dbi.select(inv.component_liner1[3]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[4] != 0) {
+            dbi.select(inv.component_liner1[4]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[5] != 0) {
+            dbi.select(inv.component_liner1[5]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[6] != 0) {
+            dbi.select(inv.component_liner1[6]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[7] != 0) {
+            dbi.select(inv.component_liner1[7]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[8] != 0) {
+            dbi.select(inv.component_liner1[8]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner1[9] != 0) {
+            dbi.select(inv.component_liner1[9]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 84, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+
+    }
+
+    if (inv.component_liner2[0] != 0) {
+        x = 152;
+        y = 152;
+        if (inv.component_liner2[1] != 0) {
+            dbi.select(inv.component_liner2[1]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner2[2] != 0) {
+            dbi.select(inv.component_liner2[2]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner2[3] != 0) {
+            dbi.select(inv.component_liner2[3]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner2[4] != 0) {
+            dbi.select(inv.component_liner2[4]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner2[5] != 0) {
+            dbi.select(inv.component_liner2[5]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner2[6] != 0) {
+            dbi.select(inv.component_liner2[6]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner2[7] != 0) {
+            dbi.select(inv.component_liner2[7]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner2[8] != 0) {
+            dbi.select(inv.component_liner2[8]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner2[9] != 0) {
+            dbi.select(inv.component_liner2[9]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 84, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+
+    }
+
+    if (inv.component_liner3[0] != 0) {
+
+        x = 152;
+        y = 292;
+        if (inv.component_liner3[1] != 0) {
+            dbi.select(inv.component_liner3[1]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner3[2] != 0) {
+            dbi.select(inv.component_liner3[2]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner3[3] != 0) {
+            dbi.select(inv.component_liner3[3]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner3[4] != 0) {
+            dbi.select(inv.component_liner3[4]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner3[5] != 0) {
+            dbi.select(inv.component_liner3[5]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner3[6] != 0) {
+            dbi.select(inv.component_liner3[6]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner3[7] != 0) {
+            dbi.select(inv.component_liner3[7]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner3[8] != 0) {
+            dbi.select(inv.component_liner3[8]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner3[9] != 0) {
+            dbi.select(inv.component_liner3[9]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 84, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+    }
+
+
+    if (inv.component_liner4[0] != 0) {
+        x = 152;
+        y = 432;
+        if (inv.component_liner4[1] != 0) {
+            dbi.select(inv.component_liner4[1]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner4[2] != 0) {
+            dbi.select(inv.component_liner4[2]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner4[3] != 0) {
+            dbi.select(inv.component_liner4[3]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner4[4] != 0) {
+            dbi.select(inv.component_liner4[4]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner4[5] != 0) {
+            dbi.select(inv.component_liner4[5]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner4[6] != 0) {
+            dbi.select(inv.component_liner4[6]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner4[7] != 0) {
+            dbi.select(inv.component_liner4[7]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner4[8] != 0) {
+            dbi.select(inv.component_liner4[8]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner4[9] != 0) {
+            dbi.select(inv.component_liner4[9]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 84, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+
+    }
+
+    if (inv.component_liner5[0] != 0) {
+        x = 152;
+        y = 572;
+        if (inv.component_liner5[1] != 0) {
+            dbi.select(inv.component_liner5[1]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 28, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[2] != 0) {
+            dbi.select(inv.component_liner5[2]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 40, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[3] != 0) {
+            dbi.select(inv.component_liner5[3]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 72, y + 44, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[4] != 0) {
+            dbi.select(inv.component_liner5[4]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 24, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[5] != 0) {
+            dbi.select(inv.component_liner5[5]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 88, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[6] != 0) {
+            dbi.select(inv.component_liner5[6]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 8, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[7] != 0) {
+            dbi.select(inv.component_liner5[7]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 104, y + 76, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[8] != 0) {
+            dbi.select(inv.component_liner5[8]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 60, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+        if (inv.component_liner5[9] != 0) {
+            dbi.select(inv.component_liner5[9]);
+            window.draw(f.show_S(liners, lo.Texturs_matrix_mods, x + 56, y + 84, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+        }
+
+    }
+
+    window.display();
+    c_e.eve(ev);
 };
