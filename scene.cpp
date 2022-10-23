@@ -1352,7 +1352,10 @@ void scene::scena5(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
 
 
 
-    window.draw(f.show_T(pl7, lo.base_font, 350, 345, pl7_text, 21, 0));
+    //количество ресурсов
+    window.draw(f.show_T(res1, lo.base_font, 350, 345, res1_text, 21, 0));
+    window.draw(f.show_T(res1_count, lo.base_font, 350, 345, res1_count_text, 21, 0));
+
     window.display();
     c_e.eve(ev);
 };
