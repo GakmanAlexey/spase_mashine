@@ -1350,6 +1350,9 @@ void scene::scena5(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
 
     }
 
+
+
+    window.draw(f.show_T(pl7, lo.base_font, 350, 345, pl7_text, 21, 0));
     window.display();
     c_e.eve(ev);
 };
