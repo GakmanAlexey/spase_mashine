@@ -1353,8 +1353,58 @@ void scene::scena5(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
 
 
     //количество ресурсов
-    window.draw(f.show_T(res1, lo.base_font, 350, 345, res1_text, 21, 0));
-    window.draw(f.show_T(res1_count, lo.base_font, 350, 345, res1_count_text, 21, 0));
+    window.draw(f.show_T(res1, lo.base_font, 585, 431, res1_text, 14, 0));
+    window.draw(f.show_T(res1_count, lo.base_font, 705, 431, res1_count_text, 14, 0));
+    window.draw(f.show_T(res2, lo.base_font, 815, 431, res2_text, 14, 0));
+    window.draw(f.show_T(res2_count, lo.base_font, 935, 431, res2_count_text, 14, 0));
+    window.draw(f.show_T(res3, lo.base_font, 1045, 431, res3_text, 14, 0));
+    window.draw(f.show_T(res3_count, lo.base_font, 1165, 431, res3_count_text, 14, 0));
+
+
+    window.draw(f.show_T(res4, lo.base_font, 585, 461, res4_text, 14, 0));
+    window.draw(f.show_T(res4_count, lo.base_font, 705, 461, res4_count_text, 14, 0));
+    window.draw(f.show_T(res5, lo.base_font, 815, 461, res5_text, 14, 0));
+    window.draw(f.show_T(res5_count, lo.base_font, 935, 461, res5_count_text, 14, 0));
+    window.draw(f.show_T(res6, lo.base_font, 1045, 461, res6_text, 14, 0));
+    window.draw(f.show_T(res6_count, lo.base_font, 1165, 461, res6_count_text, 14, 0));
+
+
+    window.draw(f.show_T(res7, lo.base_font, 585, 491, res7_text, 14, 0));
+    window.draw(f.show_T(res7_count, lo.base_font, 705, 491, res7_count_text, 14, 0));
+    window.draw(f.show_T(res8, lo.base_font, 815, 491, res8_text, 14, 0));
+    window.draw(f.show_T(res8_count, lo.base_font, 935, 491, res8_count_text, 14, 0));
+    window.draw(f.show_T(res9, lo.base_font, 1045, 491, res9_text, 14, 0));
+    window.draw(f.show_T(res9_count, lo.base_font, 1165, 491, res9_count_text, 14, 0));
+
+
+    window.draw(f.show_T(res10, lo.base_font, 585, 521, res10_text, 14, 0));
+    window.draw(f.show_T(res10_count, lo.base_font, 705, 521, res10_count_text, 14, 0));
+    window.draw(f.show_T(res11, lo.base_font, 815, 521, res11_text, 14, 0));
+    window.draw(f.show_T(res11_count, lo.base_font, 935, 521, res11_count_text, 14, 0));
+    window.draw(f.show_T(res12, lo.base_font, 1045, 521, res12_text, 14, 0));
+    window.draw(f.show_T(res12_count, lo.base_font, 1165, 521, res12_count_text, 14, 0));
+
+
+    window.draw(f.show_T(res13, lo.base_font, 585, 551, res13_text, 14, 0));
+    window.draw(f.show_T(res13_count, lo.base_font, 705, 551, res13_count_text, 14, 0));
+    window.draw(f.show_T(res14, lo.base_font, 815, 551, res14_text, 14, 0));
+    window.draw(f.show_T(res14_count, lo.base_font, 935, 551, res14_count_text, 14, 0));
+    window.draw(f.show_T(res15, lo.base_font, 1045, 551, res15_text, 14, 0));
+    window.draw(f.show_T(res15_count, lo.base_font, 1165, 551, res15_count_text, 14, 0));
+
+
+    window.draw(f.show_T(res16, lo.base_font, 585, 581, res16_text, 14, 0));
+    window.draw(f.show_T(res16_count, lo.base_font, 705, 581, res16_count_text, 14, 0));
+    window.draw(f.show_T(res17, lo.base_font, 815, 581, res17_text, 14, 0));
+    window.draw(f.show_T(res17_count, lo.base_font, 935, 581, res17_count_text, 14, 0));
+    window.draw(f.show_T(res18, lo.base_font, 1045, 581, res18_text, 14, 0));
+    window.draw(f.show_T(res18_count, lo.base_font, 1165, 581, res18_count_text, 14, 0));
+
+
+    window.draw(f.show_T(res19, lo.base_font, 585, 611, res19_text, 14, 0));
+    window.draw(f.show_T(res19_count, lo.base_font, 705, 611, res19_count_text, 14, 0));
+    window.draw(f.show_T(res20, lo.base_font, 815, 611, res20_text, 14, 0));
+    window.draw(f.show_T(res20_count, lo.base_font, 935, 611, res20_count_text, 14, 0));
 
     window.display();
     c_e.eve(ev);
