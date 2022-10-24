@@ -1351,6 +1351,49 @@ void scene::scena5(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
     }
 
 
+    //корабли доп
+    x = 298;
+    y = 13;
+    if (inv.liner_list[0] != 0) {
+        dbi.select(inv.liner_list[0]);       
+        window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x , y, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+    }
+    if (inv.liner_list[1] != 0) {
+        dbi.select(inv.liner_list[1]);
+        window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x+140, y, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+    }
+    if (inv.liner_list[2] != 0) {
+        dbi.select(inv.liner_list[2]);
+        window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x, y+140, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+    }
+    if (inv.liner_list[3] != 0) {
+        dbi.select(inv.liner_list[3]);
+        window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x + 140, y + 140, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+    }
+    if (inv.liner_list[4] != 0) {
+        dbi.select(inv.liner_list[4]);
+        window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x, y + 280, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+    }
+    if (inv.liner_list[5] != 0) {
+        dbi.select(inv.liner_list[5]);
+        window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x + 140, y + 280, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+    }
+    if (inv.liner_list[6] != 0) {
+        dbi.select(inv.liner_list[6]);
+        window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x, y + 420, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+    }
+    if (inv.liner_list[7] != 0) {
+        dbi.select(inv.liner_list[7]);
+        window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x + 140, y + 420, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+    }
+    if (inv.liner_list[8] != 0) {
+        dbi.select(inv.liner_list[8]);
+        window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x, y + 560, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+    }
+    if (inv.liner_list[9] != 0) {
+        dbi.select(inv.liner_list[9]);
+        window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x + 140, y + 560, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+    }
 
     //количество ресурсов
     window.draw(f.show_T(res1, lo.base_font, 585, 431, res1_text, 14, 0));
