@@ -143,7 +143,7 @@ void Inventory::load_liners() {
 void  Inventory::load_moduls() {
 	int i = 0;
 	while (i < 1000) {
-		moduls_id.push_back(0);
+		moduls_id.push_back(11);
 		i++;
 	}
 };

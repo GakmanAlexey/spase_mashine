@@ -1397,13 +1397,16 @@ void scene::scena5(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
 
     int cont_x = 0;
     int cont_y = 0;
-    int start_x_inv = 0;
-    int start_y_inv = 0;
+    int start_x_inv = 584;
+    int start_y_inv = 22;
     int count_z = 0;
-    while (cont_x < 21) {
+    while (cont_x < 36) {
         cont_y = 0;
-        while (cont_y < 36) {
-            dbi.select(inv.moduls_id[count_z]);
+        while (cont_y < 21) {
+            if (inv.moduls_id[count_z] != 0) {
+                dbi.select(inv.moduls_id[count_z]);
+                window.draw(f.show_S(liners, lo.Texturs_matrix_mods, start_x_inv + (cont_x*19), start_y_inv + (cont_y *19), dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
+            }
             count_z++;
             cont_y++;
         }
