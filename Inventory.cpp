@@ -127,6 +127,17 @@ void Inventory::load_liners() {
 	component_liner5.push_back(0);//Обвес
 	component_liner5.push_back(0);//Обвес
 	component_liner5.push_back(0);//Обвес
+
+	liner_list.push_back(0);//Доп лайнер
+	liner_list.push_back(0);//Доп лайнер
+	liner_list.push_back(0);//Доп лайнер
+	liner_list.push_back(0);//Доп лайнер
+	liner_list.push_back(0);//Доп лайнер
+	liner_list.push_back(0);//Доп лайнер
+	liner_list.push_back(0);//Доп лайнер
+	liner_list.push_back(0);//Доп лайнер
+	liner_list.push_back(0);//Доп лайнер
+	liner_list.push_back(0);//Доп лайнер
 };
 
 void  Inventory::load_moduls() {

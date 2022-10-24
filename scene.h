@@ -92,103 +92,103 @@ public:
 
 
 	sf::Text res1;
-	sf::String res1_text = L"Ресурс1";
+	sf::String res1_text = L"Монеты";
 	sf::Text res1_count;
 	sf::String res1_count_text = L"0";
 
 	sf::Text res2;
-	sf::String res2_text = L"Ресурс1";
+	sf::String res2_text = L"Фрагменты";
 	sf::Text res2_count;
 	sf::String res2_count_text = L"0";
 
 	sf::Text res3;
-	sf::String res3_text = L"Ресурс1";
+	sf::String res3_text = L"Страницы";
 	sf::Text res3_count;
 	sf::String res3_count_text = L"0";
 
 	sf::Text res4;
-	sf::String res4_text = L"Ресурс1";
+	sf::String res4_text = L"Медь";
 	sf::Text res4_count;
 	sf::String res4_count_text = L"0";
 
 	sf::Text res5;
-	sf::String res5_text = L"Ресурс1";
+	sf::String res5_text = L"Алюминий";
 	sf::Text res5_count;
 	sf::String res5_count_text = L"0";
 
 	sf::Text res6;
-	sf::String res6_text = L"Ресурс1";
+	sf::String res6_text = L"Железо";
 	sf::Text res6_count;
 	sf::String res6_count_text = L"0";
 
 	sf::Text res7;
-	sf::String res7_text = L"Ресурс1";
+	sf::String res7_text = L"Золото";
 	sf::Text res7_count;
 	sf::String res7_count_text = L"0";
 
 	sf::Text res8;
-	sf::String res8_text = L"Ресурс1";
+	sf::String res8_text = L"Платина";
 	sf::Text res8_count;
 	sf::String res8_count_text = L"0";
 
 	sf::Text res9;
-	sf::String res9_text = L"Ресурс1";
+	sf::String res9_text = L"Иридий";
 	sf::Text res9_count;
 	sf::String res9_count_text = L"0";
 
 	sf::Text res10;
-	sf::String res10_text = L"Ресурс1";
+	sf::String res10_text = L"Уран";
 	sf::Text res10_count;
 	sf::String res10_count_text = L"0";
 
 
 	sf::Text res11;
-	sf::String res11_text = L"Ресурс1";
+	sf::String res11_text = L"Кремний";
 	sf::Text res11_count;
 	sf::String res11_count_text = L"0";
 
 	sf::Text res12;
-	sf::String res12_text = L"Ресурс1";
+	sf::String res12_text = L"Вольфрам";
 	sf::Text res12_count;
 	sf::String res12_count_text = L"0";
 
 	sf::Text res13;
-	sf::String res13_text = L"Ресурс1";
+	sf::String res13_text = L"Серебро";
 	sf::Text res13_count;
 	sf::String res13_count_text = L"0";
 
 	sf::Text res14;
-	sf::String res14_text = L"Ресурс1";
+	sf::String res14_text = L"Кадмий";
 	sf::Text res14_count;
 	sf::String res14_count_text = L"0";
 
 	sf::Text res15;
-	sf::String res15_text = L"Ресурс1";
+	sf::String res15_text = L"Сербантий";
 	sf::Text res15_count;
 	sf::String res15_count_text = L"0";
 
 	sf::Text res16;
-	sf::String res16_text = L"Ресурс1";
+	sf::String res16_text = L"Ртуть";
 	sf::Text res16_count;
 	sf::String res16_count_text = L"0";
 
 	sf::Text res17;
-	sf::String res17_text = L"Ресурс1";
+	sf::String res17_text = L"Висмус";
 	sf::Text res17_count;
 	sf::String res17_count_text = L"0";
 
 	sf::Text res18;
-	sf::String res18_text = L"Ресурс1";
+	sf::String res18_text = L"Никель";
 	sf::Text res18_count;
 	sf::String res18_count_text = L"0";
 
 	sf::Text res19;
-	sf::String res19_text = L"Ресурс1";
+	sf::String res19_text = L"Алерций";
 	sf::Text res19_count;
 	sf::String res19_count_text = L"0";
 
 	sf::Text res20;
-	sf::String res20_text = L"Ресурс1";
+	sf::String res20_text = L"Ринуан";
 	sf::Text res20_count;
 	sf::String res20_count_text = L"0";
 

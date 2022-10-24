@@ -12,6 +12,7 @@ public:
 	std::vector <int> component_liner3;
 	std::vector <int> component_liner4;
 	std::vector <int> component_liner5;
+	std::vector <int> liner_list;
 
 	std::vector <int> moduls_id;
 
