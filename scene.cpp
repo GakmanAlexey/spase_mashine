@@ -1395,6 +1395,22 @@ void scene::scena5(CFG& cfg, event& ev, Load& lo, L& l, F& f, custom_event& c_e,
         window.draw(f.show_S(liners, lo.Texturs_matrix_liners, x + 140, y + 560, dbi.active_x, dbi.active_y, dbi.active_w, dbi.active_h));
     }
 
+    int cont_x = 0;
+    int cont_y = 0;
+    int start_x_inv = 0;
+    int start_y_inv = 0;
+    int count_z = 0;
+    while (cont_x < 21) {
+        cont_y = 0;
+        while (cont_y < 36) {
+            dbi.select(inv.moduls_id[count_z]);
+            count_z++;
+            cont_y++;
+        }
+
+        cont_x++;
+    }
+
     //количество ресурсов
     window.draw(f.show_T(res1, lo.base_font, 585, 431, res1_text, 14, 0));
     window.draw(f.show_T(res1_count, lo.base_font, 705, 431, res1_count_text, 14, 0));
